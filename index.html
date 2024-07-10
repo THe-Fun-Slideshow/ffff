@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Minecraft Game</title>
+    <style>
+        /* CSS styles for game interface */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #abcdef;
+            text-align: center;
+        }
+        #game-container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to My Minecraft Game</h1>
+        <div id="game-screen">
+            <!-- Game canvas or display area -->
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+        <div id="game-controls">
+            <!-- Game controls (buttons, input fields, etc.) -->
+            <button id="startSinglePlayer">Start Single Player</button>
+            <button id="startMultiplayer">Start Multiplayer</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for game functionality -->
+    <script>
+        // JavaScript code for game logic
+        document.getElementById('startSinglePlayer').addEventListener('click', function() {
+            alert('Starting Single Player Mode');
+            startSinglePlayerGame(); // Call function to start single player game
+        });
+
+        document.getElementById('startMultiplayer').addEventListener('click', function() {
+            alert('Starting Multiplayer Mode');
+            connectToMultiplayerServer(); // Call function to connect to multiplayer server
+        });
+
+        function startSinglePlayerGame() {
+            // Placeholder for single player game logic
+            console.log('Single player game started');
+        }
+
+        function connectToMultiplayerServer() {
+            // Placeholder for multiplayer server connection logic
+            console.log('Connecting to multiplayer server');
+        }
+    </script>
+</body>
+</html>
